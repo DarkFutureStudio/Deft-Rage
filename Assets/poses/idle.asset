@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: idle
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: kamar
+    localPosition: {x: 2.3688548, y: -7.53, z: 0.02734375}
+    localRotation: {x: 0, y: 0, z: 0.6731481, w: 0.7395078}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/sine
+    localPosition: {x: 2.710164, y: 0, z: 0}
+    localRotation: {x: -0, y: 0, z: -0.1575635, w: -0.9875089}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/sine/head
+    localPosition: {x: 9.27051, y: -0.00000021979213, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.07113179, w: 0.9974669}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/sine/bazo rast
+    localPosition: {x: 6.0929985, y: -7.04325, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.99995035, w: -0.00996506}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/sine/bazo rast/daste rast
+    localPosition: {x: 8.541919, y: 0.0000029802322, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.39111838, w: 0.9203404}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/sine/bazo chap
+    localPosition: {x: 7.5477333, y: 4.332442, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9982014, w: 0.059950102}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/sine/bazo chap/daste chap
+    localPosition: {x: 8.368309, y: -0.00000047683716, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.38310474, w: 0.9237049}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/paye rast
+    localPosition: {x: 0.094622985, y: -1.1879929, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.99971, w: -0.024080615}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/paye rast/moche paye rast
+    localPosition: {x: 6.540295, y: 0.00000048428774, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.355503, w: 0.93467516}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/paye rast/moche paye rast/feet rast
+    localPosition: {x: 6.2226787, y: 0.000000056393674, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.8707507, w: 0.4917247}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/paye chap
+    localPosition: {x: 0.100700036, y: 0.99864244, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.990203, w: -0.13963534}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/paye chap/moche paye chap
+    localPosition: {x: 6.573569, y: -0.000000044703484, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.37991402, w: 0.9250218}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: kamar/paye chap/moche paye chap/feet chap
+    localPosition: {x: 6.2078924, y: 0.000000046020432, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.8450707, w: 0.5346546}
+    localScale: {x: 1, y: 1, z: 1}

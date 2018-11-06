@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: bine
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: bone/basan
+    localPosition: {x: -0.07970214, y: -7.0765533, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.73110545, w: 0.6822645}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/sine
+    localPosition: {x: 1.0000011, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.07872989, w: 0.99689597}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/sine/head
+    localPosition: {x: 4.060443, y: 0.00000028312206, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.09591619, w: 0.99538946}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/sine/bazoo rast
+    localPosition: {x: 2.402896, y: -2.8788197, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.99997723, w: 0.006750727}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/sine/bazoo rast/moche rast
+    localPosition: {x: 3.3235033, y: 0.00000059604645, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.17451453, w: 0.9846546}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/sine/bazoo chap
+    localPosition: {x: 3.6544347, y: 1.5360246, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9944331, w: 0.10537014}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/sine/bazoo chap/moche chap
+    localPosition: {x: 3.2614405, y: -0.00000047683716, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/roone chap
+    localPosition: {x: 0.024139944, y: 0.45179087, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.99933517, w: 0.03645967}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/roone chap/moche chap
+    localPosition: {x: 2.6200023, y: -0.00000017881393, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/roone chap/moche chap/feete chap
+    localPosition: {x: 2.5168238, y: -0.00000023841858, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.696639, w: -0.7174218}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/roone rastee
+    localPosition: {x: 0.0028614404, y: -0.414728, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9996346, w: 0.027031187}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/roone rastee/moche rast
+    localPosition: {x: 2.5800004, y: 0.00000010803342, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bone/basan/roone rastee/moche rast/feete rast
+    localPosition: {x: 2.7061656, y: -0.00000009732321, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.7091505, w: 0.70505714}
+    localScale: {x: 1, y: 1, z: 1}
