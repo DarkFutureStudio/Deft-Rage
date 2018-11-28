@@ -3,9 +3,12 @@ using UnityEngine.Networking;
 
 public class AnimController : NetworkBehaviour {
 
-    private Animator m_anim;                                     //Animator component of the player
-    private float x;                                            //This variable should assign to the input float of the player ( Example: float x = input.getaxis )
-    private Rigidbody2D m_rigidbody;                            //Rigidbody component of the player
+    //Animator component of the player
+    private Animator m_anim;                                     
+    //This variable should assign to the input float of the player ( Example: float x = input.getaxis )
+    private float x;                                         
+    //Rigidbody component of the player
+    private Rigidbody2D m_rigidbody;                         
     private PlayerController pc;
 
     void Start()
@@ -17,7 +20,8 @@ public class AnimController : NetworkBehaviour {
             pc = this.gameObject.GetComponent<PlayerController>();
         }
     }
-
+    
+    //Do the settings in the fixedUpdate for smoothing
     void FixedUpdate()
     {
         if (!isLocalPlayer)
@@ -25,36 +29,41 @@ public class AnimController : NetworkBehaviour {
 
         m_anim.SetBool("Ground", pc.grounded);
 
-        Move(pc.x, m_rigidbody.velocity.y);                                 //Do the settings in the fixedUpdate for smoothing
+        Move(pc.x, m_rigidbody.velocity.y);                 
 
     }
 
-    private void Move(float x, float velocity)               //Sets the value of the parameters in the animator
+    //Sets the value of the parameters in the animator
+    private void Move(float x, float velocity)              
     {
         m_anim.SetFloat("Speed", Mathf.Abs(x));
         m_anim.SetFloat("vSpeed", velocity);
     }
 
+    //This function should call when the uppercut move done
     public void UppercutAnimation()
     {
-        Cmd_Trigger("Hit");                                         //This function should call when the uppercut move done
+        Cmd_Trigger("Hit");                                       
     }
 
+    //This function should call when the hook move done
     public void HookAnimation()
     {
-        Cmd_Trigger("Punch");                                           //This function should call when the hook move done
+        Cmd_Trigger("Punch");                                     
     }
 
+    //Request the server politely for telling other clients about the state of animator
     [Command]
     void Cmd_Trigger(string param)
     {
-        Rpc_Trigger(param);                                         //Request the server politely for telling other clients about the state of animator
+        Rpc_Trigger(param);                                       
     }
 
+    //Telling other clients about the state of animator
     [ClientRpc]
     void Rpc_Trigger(string param)
     {
-        Animator anim = this.gameObject.GetComponent<Animator>();                   //Telling other clients about the state of animator
+        Animator anim = this.gameObject.GetComponent<Animator>(); 
         anim.SetTrigger(param);
     }
 }
