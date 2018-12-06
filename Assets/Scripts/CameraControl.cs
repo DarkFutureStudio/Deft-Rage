@@ -44,6 +44,9 @@ public class CameraControl : MonoBehaviour
 			num++;
 		}
 
+		if (num > 0)
+			avragePos /= num;
+			
 		avragePos.z = transform.position.z;
 
 		m_desirePosition = avragePos;
