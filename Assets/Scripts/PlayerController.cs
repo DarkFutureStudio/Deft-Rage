@@ -12,9 +12,6 @@ public class PlayerController : NetworkBehaviour {
     public float groundCooldown = 2.5f;
 
     private Rigidbody2D rb;
-    // private Transform m_mainCamera;
-    // private Vector3 m_cameraOffset;
-
     public float JumpForce = 1000f;
     public float x;
 
@@ -34,9 +31,6 @@ public class PlayerController : NetworkBehaviour {
     {
         if (isLocalPlayer)
             rb = GetComponent<Rigidbody2D>();
-
-        // m_mainCamera = Camera.main.transform;
-        // m_cameraOffset = new Vector3(0f, 0f, -10f);
     }
 
     void Update()
@@ -74,8 +68,6 @@ public class PlayerController : NetworkBehaviour {
         {
             groundCooldown -= Time.deltaTime;
         }
-
-        // MoveCamera();
     }
 
     [Command]
@@ -108,11 +100,4 @@ public class PlayerController : NetworkBehaviour {
     {
         transform.localScale = scale;
     }
-
-    // private void MoveCamera()
-    // {
-    //     m_mainCamera.position = transform.position;
-
-    //     m_mainCamera.Translate(m_cameraOffset);
-    // }
 }
