@@ -24,8 +24,14 @@ public class Stamina : NetworkBehaviour
 
     public float CurrentStamina
     {
-        get { return m_CurrentStamina; }
-        set { m_CurrentStamina = value; }
+        get 
+        {
+            return m_CurrentStamina; 
+        }
+        set 
+        {
+            m_CurrentStamina = value; 
+        }
     }
 
     private void Start()

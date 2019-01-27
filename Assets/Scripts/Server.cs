@@ -2,7 +2,8 @@
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-public class Server : NetworkBehaviour {
+public class Server : NetworkBehaviour 
+{
 
     private float speed = 0.04f;
     private static float startTime = 300f;
